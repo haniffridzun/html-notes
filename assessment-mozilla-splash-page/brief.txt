@@ -1,0 +1,21 @@
+##### preparing images #####
+using your favourite image editor, create 400px wide and 120px wide versions of:
+ [] firefox_logo-only_RGB.png
+ [] firefox-addons.jpg
+ [] mozilla-dinosaur-head.png
+
+call them something sensible, e.g. firefoxlogo400.png and firefoxlogo120.png
+
+along with mdn.svg, these images will be your icons to link to further resources, inside the further-info area. you'll also link to the firefox logo in the site header. save copies of all these inside the same directory as index.html
+
+next, create a 1200px wide landscape verson of red-panda.jpg, and a 600px wide portrait version that shows the panda in more of a close up shot. again, call them something sensible so you can easily identify them. save a copy of both of these inside the same directory as index.html
+
+note, optimize JPG and PNG images to make them as small as possible, while still looking ok (tinypng.com)
+
+ [] adding a logo to the header - inside the <header> element, add a <img> element that will embed the small version of the firefox logo in the header.
+
+ [] adding a video to the main article content - just inside <article> element, embed the youtube video, using the appropriate youtube tools to generate the code. the video should be 400px wide
+
+ [] adding responsive images to the further info links - inside the <div> with the class of further-info you will find for <a> elements - each one linking to an interesting mozilla-related page. to complete this section you'll need to insert an <img> element inside each one containing appropriate src, alt, srcset and sizes attributes
+
+ [] an art directed red panda - inside the <div> with the class of red-panda, we want to insert a <picture> element that serves the small portrait panda image if the viewport is 600px wide or less, and the large landscape image otherwise
